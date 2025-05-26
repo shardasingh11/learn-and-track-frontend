@@ -1,13 +1,22 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import HomePage from "./components/HomePage";
 
 
 function App() {
   return (
-    <div className="App">
-      <div className="bg-orange-400 text-4xl text-white p-4 rounded-lg">
-        Hello Tailwind!
+    <BrowserRouter>
+      <div className="app">
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+
+          </Routes>
+        </main>
+
       </div>
-      <h1 className="text-4xl text-blue-700 font-bold"> Hello Learn and track</h1>
-    </div>
+    </BrowserRouter>
   );
 }
 
