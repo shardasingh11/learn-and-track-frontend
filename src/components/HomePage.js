@@ -7,8 +7,7 @@ import { Clock, BookOpen, TrendingUp, Users, Play, Plus, Component } from "lucid
 const HomePage = () => {
    return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-indigo-100">
-      {/* Header */}
-      <Navbar />
+   
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
