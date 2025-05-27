@@ -95,6 +95,7 @@ const LoginPage = () => {
 
         const token = data.access_token;
         const expiryTime = new Date(data.expiry_time);
+        // console.log(expiryTime.toISOString());
       }
 
       // Simulate success
@@ -115,29 +116,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-indigo-100">
-      {/* Top Navigation */}
-      <div className="bg-white/50 backdrop-blur-sm border-b border-white/20">
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-indigo-600 rounded flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-bold text-xl text-gray-900">StudyMind</span>
-            </div>
-            <div className="text-sm text-gray-600">
-              Need help?{" "}
-              <Link
-                to="#"
-                className="text-purple-600 hover:text-purple-700 font-medium ml-1"
-              >
-                Contact Support
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-indigo-100 ">
 
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -148,11 +127,11 @@ const LoginPage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex items-center justify-center px-4 min-h-[calc(100vh-120px)] mt-4">
+      <div className="flex items-center justify-center px-4 min-h-[calc(100vh-120px)]">
         {/* Login Card */}
         <div className="relative w-full max-w-md">
           {/* Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 mt-4">
             <h1 className="text-4xl font-bold text-gray-900 mb-3">
               Welcome Back
             </h1>
